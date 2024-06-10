@@ -1,4 +1,4 @@
-<model-viewer src="Nuka Cola T51B Fallout 4 Helmet - Adaptive • 30% • 2k - Adaptive • 67% • 4k.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+<model-viewer src="Nuka Cola T51B Fallout 4 Helmet - Adaptive • 30% • 4k.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
     </div>

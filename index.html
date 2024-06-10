@@ -1,60 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Wolfe Collections</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-  <section class="hero is-fullheight is-dark">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns is-vcentered is-centered">
-          <div class="column is-6">
-            <div class="block">
-              <h1 class="title is-2">Welcome to Wolfe Collections!</h1>
-            </div>
-            <div class="block">
-              <h2 class="subtitle">I create dedicated websites for each individual item in my collection.</h2>
-            </div>
-            <div class="block buttons">
-              <a href="https://facebook.com/"><button class="button is-white is-outlined">Visit my Facebook</button></a> &nbsp;
-              <a href="https://twitter.com/"><button class="button is-white is-outlined">Visit my Twitter</button></a>
-            </div>
-          </div>
-        </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="Nuka Cola T51B Fallout 4 Helmet - Adaptive • 30% • 4k.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="title">About Me</h2>
-      <p>Hello! I am a passionate collector of cards, comics, posters, action figures, games, and retro game systems. My collection reflects my love for nostalgia and pop culture. I take pride in finding unique and rare items to add to my ever-growing collection. With a keen eye for detail and a dedication to my hobby, I am always on the hunt for the next great find. Browse my eBay store to discover hidden treasures from the past and start building your own collection today!</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="title">Portfolio</h2>
-      <p>This is where you can showcase the individual items in your collection. You can use a grid layout with images and descriptions, or create separate pages for each item.</p>
-      <div class="columns">
-        <div class="column is-one-third">
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://poly.cam/capture/392EA219-ED3A-4BDF-BBF7-A616311A1A8F" alt="Project 1">
-              </figure>
-            </div>
-            <div class="card-content">
-              <p class="title">Project 1</p>
-              <p>A brief description of your item.</p>
-            </div>
-          </div>
-        </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
       </div>
-    </div>
-  </section>
-
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
   </body>
 </html>
